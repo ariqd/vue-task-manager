@@ -37,7 +37,6 @@ export default {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ complete: !this.project.complete })
             }).then(() => this.$emit('complete', this.project.id))
-
         }
     },
 };
